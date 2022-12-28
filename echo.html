@@ -13,7 +13,7 @@
 			<div id="wrapper">
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">PROJECT RAIN</a>
+						<a href="index.html" class="logo">ECHO</a>
 					</header>
 
 				<!-- Main -->
@@ -21,99 +21,46 @@
 
 						<!-- Post -->
 							<section class="post">
-								<a href="index.html" class="button small">BACK</a>
-								<header class="major">
-									<h1>Project RAIN</h1>
-								</header>
+								<span style="position:relative; left:-55px;top:-60px"><a href="index.html" class="button small">BACK</a></span>
+								<br><span style="position: relative; left: 100px"><img src="images/echo_title.jpg" style="width:80%" alt="" /></span>
 
 								<!-- Text stuff -->
 									<h3>Inroduction</h3>
 									<p>
-										<i><b>Project RAIN</b></i> is an interactive music rhythm game with hand movements. By wearing the ring-like wearable interactive device <i><b>X Ring</b></i>, the player must make various designated gestures according to the music rhythm and screen prompts. The game will give appropriate scores based on the accuracy of the player’s gestures. The player’s goal is to achieve a higher score and fully enjoy the music in the game. 
-										<br>Both the game software Project RAIN and wearable interactive device X Ring are designed and developed by Jinyi Dai.
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-3"><span class="image fit"><img src="images/xring01.jpg" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/xring02.jpg" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/projectrain01.png" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/projectrain02.png" alt="" /></span></div>
-											</div>
-										</div>
+										<i><b>ECHO</b></i> is a first-person story-oriented 3D puzzle game. In this game, a famous painter who had just died came to a place called Reincarnation Office and was told that he had to go back to the time that caused his three greatest regrets in life. Only when he let go of all the regrets could he reincarnate. Players will take on the role of the painter, learning about the story of his past and helping him make better choices in these situations.
+									</p>
+
+									<hr/>
+									<h3>Team Contribution</h3>
+									<p>
+										<br>ECHO is finished by a team with eight members. I was the plot designer and level designer of the team. I designed the game's background and characters and completed all the text writing, which is more than 10,000 words in Chinese. At the same time, I planned the basic gameplay and determined the main logic of each stage.  I also designed most  puzzles in the game, such as finding clues or playing small games according to the plot.
+										<br>Besides, as the team leader, I also did a lot of work, including task distribution, progress monitoring, and coordinated communication within the team.
 									</p>
 
 									<hr/>
 									<h3>Design Inspiration</h3>
 									<p>
-										The project was mainly inspired by Ubisoft's music dance game Just Dance. Being bothered by  playing the game in limited space, I came out with the idea of designing a physical interaction game that will be more flexible. For example, it allows players to play the game at a computer desk. 
-										<br>While listening to music, people would unconsciously clap their hands to the beat or wave hands to the rhythm. In this situation, hand movements can enhance people's perception of music, allowing them to immerse themselves in the music and thoroughly enjoy it. In traditional music games, players are usually asked to tap the screen or press a key on the keyboard with the rhythm. However, these kinds of interactions are insufficient for immersive music. With the gesture ring, I hope to give players a better immersive andexciting music experience by combining hand gestures with musical rhythm.
+										The death of my aunt, a very close family member, inspired me to design this game relevant to the afterlife. Being filled with sadness, I felt regretful about those things we didn't get a chance to do together.
+										<br>In traditional Chinese stories, there is a place called Naihe Bridge where the dead must drink Mengpo soup to forget their previous lives before being reincarnated. Based on this idea, I designed a fictional place called "Reincarnation Office". Instead of being imbued with the ominous atmosphere of death, this place is more like a busy office hall. All the souls of the dead must fill in a form as a way of security check, and they can only leave after confirming that they no longer have regrets about their previous lives. I designed the employees of the Office as cute ghosts who speak in a serious tone and used this contrast to weaken the fear of death in the dialogue. The dead no longer forgets their regrets by drinking Mengpo soup; instead, they go back to the past and make different choices in the Reincarnation Office to make up for their regrets. Althoughthere would be no actural changes to the past life, the dead can feel a sense of relief by reliving that moment and letting their regrets go. 
+										<br>In the game, players act as the famous painter who has just passed away. He came to the Reincarnation Office with deep regrets and returned to the past three moments that made him most regretful. He was given a chance to make a new choice in these moments. After letting go of all regrets, he would be ready to leave the Office and embrace his next life. I also  design an ending in which the painter can still leave the Office even if nothing has changed, because if one doesn t dwell on it too much, some regrets can become precious memories. Through this game, I hope players can let go of their sadness for the dead, and at the same time, cherish the time spent with the living and try their best to leave fewer regrets in life.
 									</p>
 
 									<hr/>
-									<h3>About X RING</h3>
+									<h3>Plot and Level Designe</h3>
 									<p>
-										<span class="image left"><img src="images/design2.png" alt="" /></span>X Ring is a wireless wearable device worn on both hands that can recognize seven different gestures. It was chosen to be presented as a ring because of its lightness, convenience, and impressive appearance. Players only need to plug a mini-USB receiver into the computer to implement the connection, like using a wireless mouse. 
-										<br><br><br><br>
-										<span class="image right"><img src="images/design1.jpg" style="width:85%" alt="" /></span>A mini development board compatible with Arduino IDE is adopted in X Ring. It has a six-degree-of-freedom inertial measurement unit to collect gesture motion signals and a BLE (Bluetooth Low Energy) module to exchange data with the connected computer. When it recognizes the movement  of player's hands, it reads a fixed-length digital signal and classifies this motion through a gesture classification model trained by CNN neural network.The trained model is converted into an Arduino header file library for direct use using TensorFlow Lite. After making a recognizable gesture, the gesture ring will send back the most likely label of the gesture to the receiving port of the connected computer through the BLE module, which can be checked by the C# code in Unity. It will be much faster than directly sending data back and handling them on the computer. 
-										<br>The ring is modeled by OpenSCAD, and 3D printed using black hard resin. The part near the finger is covered with soft rubber to make it more comfortable.
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-3"><span class="image fit"><img src="images/model1.png" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/model2.png" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/model3.jpg" alt="" /></span></div>							
-												<div class="col-3"><span class="image fit"><img src="images/model5.jpg" alt="" /></span></div>
-											</div>
-										</div>	
-									</p>
-
-									<hr/>
-									<h3>About Porject RAIN</h3>
-									<p>
-										Project RAIN is developed by Unity, and Some of the art resources are from the Unity Asset Store. Its name is derived from the homonym of “ring”. 
-										<br>By connecting X Ring with the computer, the player can control this game simply using hand gestures. For example, when the player uses the right hand to turn upward or downward, the option cursor in the game menu interface will move up and down accordingly. When the player decides to select one option, the choice can be confirmed with a simple two-handed slap.
-										<br>In the game, many different music pieces can be chosen. After picking a piece of certain music, the player is required to make different gestures according to the rhythm to hit the cubes flying from a distance. The cubes in the game are of different colors and shapes to represent different gestures. When a cube is close to the screen, a white transparent circle will appear to prompt the user. When the circle turns into solid-colored, the player should make gestures in line with the color and shape of the cube. The game will give scores to players’ performance based on the accuracy of their actions and add it to the total score. The player’s goal is to achieve a higher score and fully enjoy the music. 
-										<br>The seven different gestures applied to the game are :
-										<div class="row">
-											<div class="col-4 col-12-small">
-												<ul>
-													<li>turning the hand up
-														<span class="image fit"><img src="images/gesture_up.gif" style="width:65%" alt="" /></span>
-													</li>
-													<li>slapping on the shoulder
-														<span class="image fit"><img src="images/gesture_shoulder.gif" style="width:65%" alt="" /></span>
-													</li>
-													<li>slapping on the back of both hands
-														<span class="image fit"><img src="images/gesture_upsidedown.gif" style="width:65%" alt="" /></span>
-													</li>
-												</ul>
-											</div>
-											<div class="col-4 col-12-small">
-												<ul>
-													<li>turning the hand down
-														<span class="image fit"><img src="images/gesture_down.gif" style="width:65%" alt="" /></span>
-													</li>
-													<li>pushing the hand forward
-														<span class="image fit"><img src="images/gesture_push.gif" style="width:65%" alt="" /></span>
-													</li>
-												</ul>
-											</div>
-											<div class="col-4 col-12-small">
-												<ul>
-													<li>drawing a circle clockwise in the air
-														<span class="image fit"><img src="images/gesture_circle.gif" style="width:65%" alt="" /></span>
-													</li>
-													<li>slapping with both hands
-														<span class="image fit"><img src="images/gesture_clip.gif" style="width:65%" alt="" /></span>
-													</li>
-												</ul>
-											</div>
-										</div>
+										<p>
+											The main body of the game is divided into three stages based on the three things the painter regretted, and some conversations with the ghost in the Office are added between these stages. At the beginning of each stage, I added a number of items that can be viewed in detail and characters that can be talked with, which can help players to better understand the character's situation by interacting with the environment.
+											<br>The first story revolves around the painter who forged a famous painting for a rich man under tremendous financial pressure . In the Office, the painter would have a chance to secretly take this painting from the rich man's collection and leave the city to start a new life. Considering the painter's situation, players must solve puzzles about where the painting is located and how to leave the collection hall while avoiding patrollers. 
+											<br>The second story is about the painter who missed the chance to bid farewell to his best friend before his friend headed to the battlefield. "Finding" is the theme of this stage. Since his friend is a violinist, I make the melodious violin sound run through all the scenes. At the end of the stage, by listening to the sound and identifying the position, players need to find him in the crowd before he boards the train and leaves.
+											<br>The third story tells that the painter ran away from home at a young age when his parents opposed him to learn painting. After spending a long time reconciling with his parents, he returned home and discovered they had passed away years ago. I designed many mechanism puzzles in the house. Even opening a door requires a lot of efforts, which can reflect his unfamiliarity with his family. At the end of the stage, the painter read a diary written by his mother and felt the passage of time and their missing and love for him. 
+										</p>
 									</p>
 
 									<hr/>
 									<h3>Story Behind</h3>
 									<p>
-										It was the first time I tried designing both hardware and software for a game, and my code programming ability had significantly improved. For the device X Ring, I implemented a trained model for gesture classification using data collecting, and applied it to the gesture ring so that it can automatically identify the start and end points of actions and directly return the gesture label. For the game Project RAIN, I independently completed all of its code work, including the part that interacts with hardware devices. I also carefully dealt with Bluetooth and gesture recognition delays. I ultimately worked out a satisfactory product that seemed almost impossible in the beginning. 
-										<br>This game had been on display for a week at Zhejiang University’s graduation exhibitionand caught many visitors’ attention. My questionnaire showed that most of them commented on this game as “very interesting” and looked forward to its further updates. The positive feedback from players is a huge encouragement to me. 
+										It is my first time designing the plot and level for a large game. Faced with inevitable lack of inspiration, I tried a lot of ways to seek inspiration, such as brainstorming and reading number of related books. I also learned how to clearly express my ideas to the programmers and art designers, and communicate with them about the feasibility and the specific implementation of these ideas. 
+										<br>As the team leader, I learnedto coordinate different members in a multi-person cooperation project. At the beginning, our progress was slow because of insufficient work plan. Hence, I set up project checkpoints and followed up on every part of the project team's work, making sure they finish their work on time.
 									</p>
 
 							</section>
